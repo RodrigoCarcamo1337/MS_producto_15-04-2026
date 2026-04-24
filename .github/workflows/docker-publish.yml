@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-pus:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     
     steps:
     - name: Descargar repo
@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }} /ms.productos:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/ms.productos:latest
